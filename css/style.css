@@ -1,0 +1,39 @@
+body {
+  background-color: gray;
+}
+
+.card-deck {
+  background: gray;
+  margin: 20px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.card-body {
+  background: gray;
+  width: auto;
+  width: 390px;
+  height: 300px;
+}
+
+.card {
+  background: gray;
+  width: auto;
+}
+.row-fluid {
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  position: absolute;
+}
+
+img {
+  position: relative;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: auto;
+}

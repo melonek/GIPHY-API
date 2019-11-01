@@ -4,33 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
     <title>FUN GIPHY GENERATOR</title>
   </head>
+
   <body>
     <div class="container-fluid">
-      <div class="row">Photo shop image</div>
-      <div class="card">
-        <div class="card-body">
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Card title</h4>
-                <p class="card-text">
-                  This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="row">Photo image</div>
+
+      <form id="api-form">
+        <label for="api-input">Add an API of your choice!</label>
+        <input type="text" id="api-input" />
+        <br />
+        <input id="add-api" type="submit" value="Submit" />
+      </form>
+
+      <div id="api-buttons"></div>
+
+      <div id="api-images"></div>
     </div>
+    <script src="./javascript/javascript.js"></script>
   </body>
 </html>
