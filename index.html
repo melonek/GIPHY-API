@@ -6,19 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link
+      href="https://fonts.googleapis.com/css?family=Bowlby+One+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster|Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
 
     <title>FUN GIPHY GENERATOR</title>
   </head>
 
   <body>
     <div class="container-fluid">
-      <div class="row">Photo image</div>
+      <div class="row">
+        <img id="catel" src="./css/nyanCat.gif" alt="nyan_cat_forever" />
+      </div>
 
       <form id="api-form">
         <label for="api-input">Add an API of your choice!</label>
@@ -30,6 +40,10 @@
       <div id="api-buttons"></div>
 
       <div id="api-images"></div>
+      <div id="text">
+        Click on the cat with a rainbow shooting out of it's butt!
+      </div>
+      <div id="text1"></div>
     </div>
     <script src="./javascript/javascript.js"></script>
   </body>

@@ -1,23 +1,152 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
-  background-color: gray;
+  background-image: url("./gradient.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background: url("./gradient.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#api-form {
+  border-radius: 20px;
+  border: 2px darkslategray solid;
+  width: 70%;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .card-deck {
   background: gray;
-  margin: 20px;
   margin: 20px auto;
   padding: 20px;
+  width: auto;
+  margin: 20px;
+  border-radius: 15px;
 }
 
 .card-body {
-  background: gray;
+  background: lightgray;
   width: auto;
-  width: 390px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+  margin: 20px;
+  border-radius: 15px;
+}
+.card-body > p {
+  font-family: "Righteous", cursive;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+#text {
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  font-size: 10px;
 }
 
+#text1 {
+  font-size: 70px;
+  font-family: "Bowlby One SC", cursive;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+}
+#api-form {
+  background: lightgray;
+  text-align: center;
+  min-height: auto;
+  border: darkslategray solid 2px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px rgb(172, 230, 230);
+}
+.card-body:hover {
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px rgb(222, 192, 247);
+  box-shadow: 0 0 20px rgb(88, 84, 90);
+}
+
+.api-button {
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+}
+
+#api-buttons {
+  border-radius: 15px;
+  margin: 10px;
+  text-align: center;
+  padding: 10px;
+  font-family: "Righteous", cursive;
+}
+
+#catel {
+  width: 70%;
+  text-align: center;
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+#catel {
+  -webkit-transform: rotate(0deg) scale(0.7);
+  transform: scale(3);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+#catel:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=30);
+  -webkit-transform: rotate(0) scale(2);
+  transform: rotate(15deg) scale(5);
+}
+label {
+  font-family: "Righteous", cursive;
+  font-size: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#api-input {
+  border-radius: 15px;
+  display: block;
+  text-align: center;
+  margin: 10px auto;
+}
+
+#add-api {
+  border-radius: 15px;
+  padding: 20px;
+  margin: 10px;
+  opacity: 0.6;
+  color: black;
+  border: darkslategray solid 2px;
+}
 .card {
-  background: gray;
+  background: lightgray;
   width: auto;
 }
 .row-fluid {
@@ -30,10 +159,24 @@ body {
   position: absolute;
 }
 
-img {
+#fotki {
   position: relative;
   width: auto;
   height: auto;
   display: block;
   margin: auto;
+  -webkit-transform: rotate(0deg) scale(0.7);
+  transform: scale(0.7);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+  -moz-box-shadow: 0 0 10px #ccc;
+  -webkit-box-shadow: 0 0 10px #ccc;
+  box-shadow: 0 0 10px rgb(172, 230, 230);
+}
+#fotki:hover {
+  opacity: 0.8;
+  filter: alpha(opacity=30);
+  -webkit-transform: rotate(0) scale(1.4);
+  transform: rotate(0) scale(1);
 }

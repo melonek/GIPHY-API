@@ -32,7 +32,7 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       let results = response.data;
-
+      console.log(results);
       for (let i = 0; i < results.length; i++) {
         let apiDiv = $("<div>");
         apiDiv.addClass("card-deck");
@@ -43,13 +43,14 @@ $(document).ready(function() {
 
         let rating = results[i].rating;
 
-        let p = $("<p>").text("Rating " + rating);
+        let p = $("<p>").text("Rating: " + rating);
 
         let animated = results[i].images.fixed_height.url;
 
         let still = results[i].images.fixed_height_still.url;
 
         let apiImage = $("<img>");
+        apiImage.attr("id", "fotki");
         apiImage.attr("src", still);
         apiImage.attr("data-still", still);
         apiImage.attr("data-animate", animated);
@@ -66,6 +67,22 @@ $(document).ready(function() {
         apiImg.addClass("row-fluid");
       }
     });
+  });
+  let nyan = new Audio("./css/nyan.mp3");
+  $("#catel").click(e => nyan.play());
+  $("#catel").click(e => {
+    $("body").css("background-image", "url(css/giphy.gif)");
+  });
+  //--NyanCat :D --//
+  $("#catel").mouseover(function() {
+    let text = $("#text1");
+    text.text("NON-STOP NYAN CAT!");
+
+    setTimeout(fade_out, 5000);
+
+    function fade_out() {
+      text.fadeOut().empty();
+    }
   });
 
   //--Setting the state from sill to animated when clicking individual images returned by API--//
