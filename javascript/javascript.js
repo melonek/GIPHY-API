@@ -32,7 +32,7 @@ $(document).ready(function() {
       method: "GET"
     }).then(function(response) {
       let results = response.data;
-      console.log(results);
+
       for (let i = 0; i < results.length; i++) {
         let apiDiv = $("<div>");
         apiDiv.addClass("card-deck");
@@ -68,6 +68,8 @@ $(document).ready(function() {
       }
     });
   });
+
+  //--NyanCat :D --//
   let nyan = new Audio("./css/nyan.mp3");
   $("#catel").click(e => nyan.play());
   $("#catel").click(e => {
